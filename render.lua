@@ -10,8 +10,6 @@ if #arg > 0 then
 		local template, error = etlua.compile(ifile:read("*a"))
 		ifile:close()
 		if template then
-			local oname = iname:gsub("%.[^.]*$", ".html")
-			local ofile = io.open(oname, "w")
 			local data
 			if #arg > 1 then
 				local dname = arg[2]
@@ -29,6 +27,8 @@ if #arg > 0 then
 					os.exit(1)
 				end
 			end
+			local oname = iname:gsub("%.[^.]*$", ".html")
+			local ofile = io.open(oname, "w")
 			ofile:write(template(data))
 			ofile:close()
 		else

@@ -5,6 +5,20 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</head>
 	<body>
-		<%= "hello" %>
+		<div class=projects>
+<% 	for _, p in ipairs(projects) do -%>
+			<div class=project>
+				<div class=name><%= p.name %></div>
+				<img class=thumb></img>
+				<div class=links>
+<% 			for _, link in ipairs(links) do -%>
+<% 				if p.links[link.name] then -%>
+					<a href="<%= p.links[link.name] %>"><%= link.display or link.name %></a>
+<% 				end -%>
+<% 			end -%>
+				</div>
+			</div>
+<% 	end -%>
+		</div>
 	</body>
 </html>
