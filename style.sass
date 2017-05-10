@@ -1,0 +1,72 @@
+@import fonts/fira-code/webfont.css
+
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+	border-width: 0
+
+// color codes from https://gist.github.com/bryanhunter/6178408
+$monokai-blue-light: #89BDFF
+$monokai-gray: #595959
+$monokai-gray-darker: #383830
+$monokai-grey-dark: #272822
+$monokai-gray-darkest: #141411
+$monokai-gray-lightest: #E6E6E6
+$monokai-green: #A6E22A
+$monokai-green-light: #A6E22E
+$monokai-magenta: #F92672
+$monokai-purple: #AE81FF
+$monokai-purple-light: #FD5FF1
+$monokai-yellow: #E6DB74
+$monokai-yellow-dark: #75715E
+$monokai-yellow-light: #F8F8F2
+
+html
+	font-family: "fira-code-regular", mono
+	font-size: 0
+	body
+		background-color: $monokai-gray-darkest
+		div.projects
+			text-align: center
+			div.project
+				margin: 16pt
+				text-align: left
+				$width: 196pt
+				$border-radius: 16pt
+				vertical-align: top
+				width: $width
+				background-color: $monokai-gray
+				display: inline-block
+				border-radius: $border-radius
+				overflow: hidden
+				*
+					font-size: 14pt
+				div.name
+					width: $width
+					height: 28pt
+					padding: 0 $border-radius
+					padding-top: 4pt
+					color: $monokai-purple
+				div.thumb
+					border-radius: $border-radius
+					width: $width
+					height: $width * (4/5)
+					background-color: $monokai-gray-lightest
+				div.links
+					max-height: 0em
+					height: auto
+					transition: all 0.5s
+					a
+						display: block
+						height: 28pt
+						padding: 0 $border-radius
+						padding-top: 4pt
+						color: $monokai-blue-light
+						text-decoration: none
+						&:hover
+							text-decoration: underline
+							// background-color: $monokai-gray-darker
+				&:hover
+					div.links
+						max-height: 8em

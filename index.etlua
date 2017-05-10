@@ -3,13 +3,14 @@
 	<head>
 		<title>Tanner Grehawick</title>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link rel=stylesheet href="style.css">
 	</head>
 	<body>
 		<div class=projects>
 <% 	for _, p in ipairs(projects) do -%>
 			<div class=project>
 				<div class=name><%= p.name %></div>
-				<img class=thumb></img>
+				<div class=thumb></div>
 				<div class=links>
 <% 			for _, link in ipairs(links) do -%>
 <% 				if p.links[link.name] then -%>
