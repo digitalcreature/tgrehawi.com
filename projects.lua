@@ -16,13 +16,13 @@ links = {
 		icon = "fa-code",
 	},
 	{
-		name = "github",
-		icon = "fa-github-alt",
-	},
-	{
 		name = "ludumdare",
 		display = "ludum dare",
 		icon = "fa-trophy",
+	},
+	{
+		name = "github",
+		icon = "fa-github-alt",
 	},
 }
 
