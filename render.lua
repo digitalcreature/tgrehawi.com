@@ -2,7 +2,6 @@
 
 local etlua = require "etlua"
 
-
 if #arg > 0 then
 	local iname = arg[1]
 	local ifile, error = io.open(iname, "r")

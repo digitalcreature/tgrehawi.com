@@ -25,20 +25,36 @@ html
 	text-align: center
 	color: $primary-light
 	a
-		text-decoration: none
 		color: $secondary-light
+		text-decoration: none
 		&:hover
-			text-decoration: underline		
+			text-decoration: underline
+		i.fa
+			display: inline-block
+			font-size: 1.2em
+			margin-right: 4pt
 	body
 		background-color: $primary-dark
+		i.div
+			font-style: normal
+			color: $secondary-light
 		div.about
 			h1.name
 				font-size: 48pt
 			div.nouns
 				font-size: 18pt
-				i.div
-					font-style: normal
-					color: $secondary-light
+		div.contact
+			a
+				color: $secondary-light
+				background-color: $neutral-dark
+				display: inline-block
+				$height: 32pt
+				height: $height
+				line-height: $height
+				border-radius: $height / 2
+				padding: 0 8pt
+			margin: 14pt 0
+			font-size: 16pt
 		div.projects
 			div.container
 				$project-width: 196pt
@@ -54,6 +70,7 @@ html
 					height: $project-width
 					vertical-align: top
 					margin: $project-margin
+					margin-top: 0
 					display: inline-block
 					position: relative
 					div.container
@@ -89,12 +106,6 @@ html
 								height: 28pt
 								line-height: 28pt
 								padding: 0 ($project-corner-radius / 2)
-								i.fa
-									display: inline-block
-									font-size: 1.2em
-									width: 1em
-									height: 1em
-									margin-right: 4pt
 						&:hover
 							div.links
 								max-height: 12em
