@@ -25,7 +25,7 @@
 				<div class=project>
 					<div class=container>
 						<div class=name><%= p.name %></div>
-						<a href="<%= main_link(p) %>" class=thumb></a>
+						<a style="<%= thumb_bg(p) %>" href="<%= main_link(p) %>" class=thumb></a>
 						<div class=links>
 <% 					for _, link in ipairs(links) do -%>
 <% 						if p.links[link.name] then -%>

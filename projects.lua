@@ -29,6 +29,7 @@ links = {
 projects = {
 	{
 		name = "tgrehawi.com",
+		thumb = "media/tgrehawi.com.png",
 		links = {
 			web = "https://tgrehawi.com",
 			github = github "tgrehawi/tgrehawi.com",
@@ -36,6 +37,7 @@ projects = {
 	},
 	{
 		name = "roguelike one",
+		thumb = "media/roguelikeone.gif",
 		links = {
 			github = github "hyperfocusgames/ld38",
 			ludumdare = "https://ldjam.com/events/ludum-dare/38/roguelike-one",
@@ -44,6 +46,7 @@ projects = {
 	},
 	{
 		name = "vapr",
+		thumb = "media/vapr.gif",
 		links = {
 			github = github "tgrehawi/vapr",
 			devpost = "https://devpost.com/software/hackital16",
@@ -51,6 +54,7 @@ projects = {
 	},
 	{
 		name = "iodine monoxide",
+		thumb = "media/iodinemonoxide.gif",
 		links = {
 			github = github "tgrehawi/iodinemonoxide",
 			devpost = "https://devpost.com/software/leap-motion-classroom-tool",
@@ -58,6 +62,7 @@ projects = {
 	},
 	{
 		name = "channel07",
+		thumb = "media/channel07.gif",
 		links = {
 			github = github "tgrehawi/channel07",
 			itch = "https://tgrehawi.itch.io/channel07",
@@ -72,4 +77,12 @@ function main_link(project)
 		end
 	end
 	return "#"
+end
+
+function thumb_bg(project)
+	if project.thumb then
+		return "background-image: url("..project.thumb..")"
+	else
+		return ""
+	end
 end

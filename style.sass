@@ -29,21 +29,30 @@ html
 		text-decoration: none
 		&:hover
 			text-decoration: underline
-		i.fa
+		i.fa:before
+			margin-right: 0.2em
 			display: inline-block
-			// font-size: 1.2em
-			margin-right: 4pt
+			width: 1.2em
+			height: 1.2em
+			line-height: 1.2em
+			text-align: center
+	background-color: $primary-dark
 	body
-		background-color: $primary-dark
+		&>div
+			margin: 0 20%
 		i.div
 			font-style: normal
 			color: $secondary-light
 		div.about
+			padding: 8pt 0
 			h1.name
 				font-size: 48pt
 			div.nouns
 				font-size: 18pt
 		div.contact
+			margin-top: 16pt
+			font-size: 16pt
+			margin-bottom: 16pt
 			a
 				color: $secondary-light
 				// background-color: $neutral-dark
@@ -54,9 +63,9 @@ html
 				line-height: $height
 				border-radius: $height / 2
 				padding: 0 8pt
-			margin: 14pt 0
-			font-size: 16pt
+				margin: 2pt
 		div.projects
+			margin: 0
 			div.container
 				$project-width: 196pt
 				$project-corner-radius: 16pt
@@ -97,11 +106,18 @@ html
 							width: $project-width
 							height: $project-width * (4/5)
 							background-color: $neutral-light
+							background-size: cover
 						div.links
 							max-height: 0em
 							height: auto
 							transition: all 0.75s
+							padding: 0 4pt
+							padding-bottom: 6pt
+							padding-top: 2pt
+							overflow: hidden
 							a
+								i.fa:before
+									font-size: 1.2em
 								display: block
 								height: 28pt
 								line-height: 28pt
