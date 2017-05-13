@@ -6,22 +6,6 @@
 	margin: 0
 	border-width: 0
 
-// color codes from https://gist.github.com/bryanhunter/6178408
-$monokai-blue-light: #89BDFF
-$monokai-gray: #595959
-$monokai-gray-darker: #383830
-$monokai-grey-dark: #272822
-$monokai-gray-darkest: #141411
-$monokai-gray-lightest: #E6E6E6
-$monokai-green: #A6E22A
-$monokai-green-light: #A6E22E
-$monokai-magenta: #F92672
-$monokai-purple: #AE81FF
-$monokai-purple-light: #FD5FF1
-$monokai-yellow: #E6DB74
-$monokai-yellow-dark: #75715E
-$monokai-yellow-light: #F8F8F2
-
 $primary: #2AAA33
 $primary-light: #7FDB0F
 $primary-dark: #225430
@@ -38,47 +22,72 @@ html
 	font-family: "Open Sans", sans-serif
 	overflow-y: scroll
 	font-size: 14pt
+	text-align: center
+	color: $primary-light
+	a
+		text-decoration: none
+		color: $secondary-light
+		&:hover
+			text-decoration: underline		
 	body
 		background-color: $primary-dark
-		padding: 0 15%
+		div.about
+			h1.name
+				font-size: 48pt
+			div.nouns
+				font-size: 18pt
+				i.div
+					font-style: normal
+					color: $secondary-light
 		div.projects
-			text-align: center
-			div.project
-				margin: 16pt
-				text-align: left
-				$width: 196pt
-				$border-radius: 16pt
-				vertical-align: top
-				width: $width
-				background-color: $neutral-dark
+			div.container
+				$project-width: 196pt
+				$project-corner-radius: 16pt
+				$project-margin: 16pt
 				display: inline-block
-				border-radius: $border-radius
-				overflow: hidden
-				color: $primary-light
-				div.name
-					width: $width
-					height: 28pt
-					padding: 0 $border-radius
-					padding-top: 4pt
-				div.thumb
-					border-radius: $border-radius
-					width: $width
-					height: $width * (4/5)
-					background-color: $neutral-light
-				div.links
-					max-height: 0em
-					height: auto
-					transition: all 0.5s
-					a
-						display: block
-						height: 28pt
-						padding: 0 $border-radius
-						padding-top: 4pt
-						text-decoration: none
-						color: inherit
+				max-width: 720pt
+				min-width: 240pt
+				width: 70%
+				div.project
+					overflow: visible
+					width: $project-width
+					height: $project-width
+					vertical-align: top
+					margin: $project-margin
+					display: inline-block
+					position: relative
+					div.container
+						position: absolute
+						left: 0
+						bottom: 0
+						line-height: normal
+						text-align: left
+						min-width: 0
+						width: $project-width
+						background-color: $neutral-dark
+						border-radius: $project-corner-radius
+						overflow: hidden
+						color: $primary-light
+						div.name
+							width: $project-width
+							height: 28pt
+							padding: 0 $project-corner-radius
+							padding-top: 4pt
+						a.thumb
+							display: block
+							border-radius: $project-corner-radius
+							width: $project-width
+							height: $project-width * (4/5)
+							background-color: $neutral-light
+						div.links
+							max-height: 0em
+							height: auto
+							transition: all 0.75s
+							a
+								display: block
+								height: 28pt
+								padding: 0 $project-corner-radius
+								padding-top: 4pt
 						&:hover
-							text-decoration: underline
-							// background-color: $monokai-gray-darker
-				&:hover
-					div.links
-						max-height: 8em
+							div.links
+								max-height: 12em

@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Tanner Grehawick</title>
+		<title>tanner grehawick</title>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link rel=stylesheet href="style.css">
 	</head>
 	<body>
+		<div class=about>
+			<h1 class=name>tanner grehawick</h1>
+			<div class=nouns>student<i class=div> / </i>developer<i class=div> / </i>creator</div>
+		</div>
 		<div class=projects>
-<% 	for _, p in ipairs(projects) do -%>
-			<div class=project>
-				<div class=name><%= p.name %></div>
-				<div class=thumb></div>
-				<div class=links>
-<% 			for _, link in ipairs(links) do -%>
-<% 				if p.links[link.name] then -%>
-					<a href="<%= p.links[link.name] %>"><%= link.display or link.name %></a>
-<% 				end -%>
-<% 			end -%>
+			<div class=container>
+<% 		for _, p in ipairs(projects) do -%>
+				<div class=project>
+					<div class=container>
+						<div class=name><%= p.name %></div>
+						<a href="<%= main_link(p) %>" class=thumb></a>
+						<div class=links>
+<% 					for _, link in ipairs(links) do -%>
+<% 						if p.links[link.name] then -%>
+							<a href="<%= p.links[link.name] %>"><%= link.display or link.name %></a>
+<% 						end -%>
+<% 					end -%>
+						</div>
+					</div>
 				</div>
+<% 		end -%>
 			</div>
-<% 	end -%>
 		</div>
 	</body>
 </html>

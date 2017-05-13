@@ -7,17 +7,17 @@ links = {
 		name = "web",		
 	},
 	{
+		name = "itch",
+	},
+	{
+		name = "devpost",
+	},
+	{
 		name = "github",
 	},
 	{
 		name = "ludumdare",
 		display = "ludum dare",
-	},
-	{
-		name = "itch",
-	},
-	{
-		name = "devpost",
 	},
 }
 
@@ -60,14 +60,11 @@ projects = {
 	},
 }
 
-local project_mt = {
-	__index = {
-		link = function(self, linkname)
-			return self.links[linkname] or "none"
-		end,
-	}
-}
-
-for _, project in ipairs(projects) do
-	setmetatable(project, project_mt)
+function main_link(project)
+	for _, link in ipairs(links) do
+		if project.links[link.name] then
+			return project.links[link.name]
+		end
+	end
+	return "#"
 end
