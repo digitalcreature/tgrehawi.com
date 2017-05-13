@@ -13,8 +13,11 @@
 			<div class=nouns>programmer<i class=div> / </i>game developer<i class=div> / </i>creator</div>
 		</div>
 		<div class=contact>
+			<a href="https://github.com/tgrehawi"><i class="fa fa-github-alt" aria-hidden></i>github</a>
 			<a href="https://twitter.com/tgrehawi"><i class="fa fa-twitter" aria-hidden></i>twitter</a>
 			<a href="https://tgrehawi.itch.io"><i class="fa fa-gamepad" aria-hidden></i>itch</a>
+			<a href="mailto:tgrehawi@gmail.com"><i class="fa fa-envelope-o" aria-hidden></i>email</a>
+			<a href="Tanner-Grehawick-Resume.pdf"><i class="fa fa-file-text" aria-hidden></i>resume</a>
 		</div>
 		<div class=projects>
 			<div class=container>
