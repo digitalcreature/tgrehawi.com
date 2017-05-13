@@ -36,10 +36,11 @@ $neutral-dark: #382e21
 
 html
 	font-family: "Open Sans", sans-serif
-	font-size: 0
 	overflow-y: scroll
+	font-size: 14pt
 	body
-		background-color: $monokai-gray-darkest
+		background-color: $primary-dark
+		padding: 0 15%
 		div.projects
 			text-align: center
 			div.project
@@ -49,23 +50,21 @@ html
 				$border-radius: 16pt
 				vertical-align: top
 				width: $width
-				background-color: $monokai-gray
+				background-color: $neutral-dark
 				display: inline-block
 				border-radius: $border-radius
 				overflow: hidden
-				*
-					font-size: 14pt
+				color: $primary-light
 				div.name
 					width: $width
 					height: 28pt
 					padding: 0 $border-radius
 					padding-top: 4pt
-					color: $monokai-purple
 				div.thumb
 					border-radius: $border-radius
 					width: $width
 					height: $width * (4/5)
-					background-color: $monokai-gray-lightest
+					background-color: $neutral-light
 				div.links
 					max-height: 0em
 					height: auto
@@ -75,8 +74,8 @@ html
 						height: 28pt
 						padding: 0 $border-radius
 						padding-top: 4pt
-						color: $monokai-blue-light
 						text-decoration: none
+						color: inherit
 						&:hover
 							text-decoration: underline
 							// background-color: $monokai-gray-darker
