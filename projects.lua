@@ -4,20 +4,25 @@ end
 
 links = {
 	{
-		name = "web",		
+		name = "web",
+		icon = "fa-globe",
 	},
 	{
 		name = "itch",
+		icon = "fa-gamepad",
 	},
 	{
 		name = "devpost",
+		icon = "fa-code",
 	},
 	{
 		name = "github",
+		icon = "fa-github-alt",
 	},
 	{
 		name = "ludumdare",
 		display = "ludum dare",
+		icon = "fa-trophy",
 	},
 }
 

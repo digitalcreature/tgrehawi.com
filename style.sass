@@ -71,8 +71,9 @@ html
 						div.name
 							width: $project-width
 							height: 28pt
-							padding: 0 $project-corner-radius
-							padding-top: 4pt
+							line-height: 28pt
+							text-align: center
+							// padding: 0 $project-corner-radius
 						a.thumb
 							display: block
 							border-radius: $project-corner-radius
@@ -86,8 +87,14 @@ html
 							a
 								display: block
 								height: 28pt
-								padding: 0 $project-corner-radius
-								padding-top: 4pt
+								line-height: 28pt
+								padding: 0 ($project-corner-radius / 2)
+								i.fa
+									display: inline-block
+									font-size: 1.2em
+									width: 1em
+									height: 1em
+									margin-right: 4pt
 						&:hover
 							div.links
 								max-height: 12em

@@ -4,6 +4,7 @@
 		<title>tanner grehawick</title>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link rel=stylesheet href="style.css">
+		<link rel=stylesheet href="css/font-awesome.min.css">
 	</head>
 	<body>
 		<div class=about>
@@ -20,7 +21,7 @@
 						<div class=links>
 <% 					for _, link in ipairs(links) do -%>
 <% 						if p.links[link.name] then -%>
-							<a href="<%= p.links[link.name] %>"><%= link.display or link.name %></a>
+							<a href="<%= p.links[link.name] %>"><i class="fa <%=link.icon%>" aria-hidden></i><%= link.display or link.name %></a>
 <% 						end -%>
 <% 					end -%>
 						</div>
