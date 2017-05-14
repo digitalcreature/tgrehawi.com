@@ -18,6 +18,10 @@ $neutral: #827057
 $neutral-light: #dbd8b3
 $neutral-dark: #382e21
 
+=desktop
+	@media screen and (min-width: 800px)
+		@content
+
 html
 	font-family: "Open Sans", sans-serif
 	overflow-y: scroll
@@ -38,17 +42,21 @@ html
 			text-align: center
 	background-color: $primary-dark
 	body
-		&>div
-			margin: 0 20%
+		+desktop
+			&>div
+				margin: 0 20%
 		i.div
 			font-style: normal
 			color: $secondary-light
 		div.about
 			padding: 8pt 0
+			font-size: 3vw
+			+desktop
+				font-size: 16pt
 			h1.name
-				font-size: 48pt
+				font-size: 3em
 			div.nouns
-				font-size: 18pt
+				font-size: 1.2em
 		div.contact
 			margin-top: 16pt
 			font-size: 16pt
@@ -67,24 +75,32 @@ html
 		div.projects
 			margin: 0
 			div.container
-				$project-width: 196pt
-				$project-corner-radius: 16pt
-				$project-margin: 16pt
-				display: inline-block
-				max-width: 720pt
-				min-width: 240pt
-				width: 70%
+				$project-width: 12em
+				$project-corner-radius: 1em
+				$project-margin: 1em
+				+desktop
+					display: inline-block
+					max-width: 720pt
+					min-width: 240pt
+					width: 70%
 				div.project
 					overflow: visible
-					width: $project-width
-					height: $project-width
 					vertical-align: top
-					margin: $project-margin
-					margin-top: 0
-					display: inline-block
-					position: relative
+					font-size: 18pt
+					text-align: center
+					margin: 1em 0
+					+desktop
+						width: $project-width
+						margin: $project-margin
+						display: inline-block
+						font-size: 14pt
+						height: $project-width
+						position: relative
 					div.container
-						position: absolute
+						display: inline-block
+						+desktop
+							position: absolute
+							display: block
 						left: 0
 						bottom: 0
 						line-height: normal
@@ -97,8 +113,8 @@ html
 						color: $primary-light
 						div.name
 							width: $project-width
-							height: 28pt
-							line-height: 28pt
+							height: 2em
+							line-height: 2em
 							text-align: center
 						a.thumb
 							display: block
@@ -108,20 +124,20 @@ html
 							background-color: $neutral-light
 							background-size: cover
 						div.links
-							max-height: 0em
 							height: auto
 							transition: all 0.75s
-							padding: 0 4pt
-							padding-bottom: 6pt
-							padding-top: 2pt
+							padding: 4pt
 							overflow: hidden
 							a
 								i.fa:before
 									font-size: 1.2em
 								display: block
-								height: 28pt
-								line-height: 28pt
+								height: 2em
+								line-height: 2em
 								padding: 0 ($project-corner-radius / 2)
-						&:hover
+						+desktop
 							div.links
-								max-height: 12em
+								max-height: 0em
+							&:hover
+								div.links
+									max-height: 12em
