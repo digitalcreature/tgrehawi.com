@@ -19,13 +19,15 @@ $neutral-light: #dbd8b3
 $neutral-dark: #382e21
 
 =desktop
-	@media screen and (min-width: 800px)
+	@media screen and (min-width: 1025px)
 		@content
 
 html
 	font-family: "Open Sans", sans-serif
 	overflow-y: scroll
-	font-size: 14pt
+	font-size: 5vw
+	+desktop
+		font-size: 16pt
 	text-align: center
 	color: $primary-light
 	a
@@ -49,51 +51,50 @@ html
 			font-style: normal
 			color: $secondary-light
 		div.about
-			padding: 8pt 0
-			font-size: 3vw
+			font-size: 0.65em
 			+desktop
-				font-size: 16pt
+				font-size: 1.25em
 			h1.name
 				font-size: 3em
 			div.nouns
 				font-size: 1.2em
 		div.contact
-			font-size: 16pt
+			font-size: 0.8em
 			margin: 1em 15%
 			+desktop
+				font-size: 1em
 				margin: 1em 20% 
 			a
 				color: $secondary-light
 				background-color: darken($primary-dark, 5)
 				display: inline-block
-				$height: 32pt
+				$height: 2em
 				height: $height
 				line-height: $height
 				border-radius: $height / 2
-				padding: 0 8pt
-				margin: 2pt
+				padding: 0 0.5em
+				margin: 0.25em
 		div.projects
 			margin: 0
 			div.container
 				$project-width: 12em
-				$project-corner-radius: 1em
+				$project-corner-radius: 1.5em
 				$project-margin: 1em
 				+desktop
 					display: inline-block
-					max-width: 720pt
+					max-width: 760pt
 					min-width: 240pt
 					width: 70%
 				div.project
 					overflow: visible
 					vertical-align: top
-					font-size: 18pt
 					text-align: center
-					margin: 1em 0
+					margin: 0
+					margin-bottom: 2em
 					+desktop
 						width: $project-width
 						margin: $project-margin
 						display: inline-block
-						font-size: 14pt
 						height: $project-width
 						position: relative
 					div.container
@@ -126,7 +127,7 @@ html
 						div.links
 							height: auto
 							transition: all 0.75s
-							padding: 4pt
+							padding: 0.25em
 							overflow: hidden
 							a
 								i.fa:before
