@@ -42,5 +42,13 @@
 <% 		end -%>
 			</div>
 		</div>
+		<div class=footer>
+			<i class="fa fa-copyright" aria-hidden></i>2017 tanner grehawick<br>
+			<i class="fa fa-power-off" aria-hidden></i>powered with
+			<a href="http://fontawesome.io"><i class="fa fa-font-awesome" aria-hidden></i>font awesome</a>
+			<a href="https://caddyserver.com/"><i class="fa fa-server" aria-hidden></i>caddy</a>
+			<a href="https://github.com/leafo/etlua"><i class="fa fa-moon-o" aria-hidden></i>etlua</a> and
+			<i class="fa fa-heart" aria-hidden></i>love
+		</div>
 	</body>
 </html>
