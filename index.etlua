@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="theme-color" content="#382e21">
+		<meta name="msapplication-navbutton-color" content="#382e21">
 		<title>tanner grehawick</title>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="script.js"></script>
