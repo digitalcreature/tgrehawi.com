@@ -5,7 +5,7 @@
 		<meta name="theme-color" content="#382e21">
 		<meta name="msapplication-navbutton-color" content="#382e21">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<title>shellby grehawick</title>
+		<title>shellby macintosh</title>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="script.js"></script>
 		<link rel=stylesheet href="style.css">
@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div class=about>
-			<h1 class=name>shellby grehawick</h1>
+			<h1 class=name>shellby macintosh</h1>
 			<div class=nouns>programmer<i class=div> / </i>game developer<i class=div> / </i>creator</div>
 		</div>
 		<div class=contact>
@@ -21,7 +21,6 @@
 			<a href="https://twitter.com/tgrehawi"><i class="fa fa-twitter" aria-hidden></i>twitter</a>
 			<a href="https://tgrehawi.itch.io"><i class="fa fa-gamepad" aria-hidden></i>itch</a>
 			<a href="mailto:tgrehawi@hyperfocus.games"><i class="fa fa-envelope-o" aria-hidden></i>email</a>
-			<a href="Shellby-Grehawick-Resume.pdf"><i class="fa fa-file-text" aria-hidden></i>resume</a>
 		</div>
 		<div class=projects>
 			<div class=container>
@@ -43,7 +42,7 @@
 			</div>
 		</div>
 		<div class=footer>
-			<i class="fa fa-copyright" aria-hidden></i>2018 shellby grehawick<br>
+			<i class="fa fa-copyright" aria-hidden></i>2018 shellby macintosh<br>
 			<i class="fa fa-power-off" aria-hidden></i>powered with
 			<a href="http://fontawesome.io"><i class="fa fa-font-awesome" aria-hidden></i>font awesome</a>
 			<a href="https://caddyserver.com/"><i class="fa fa-server" aria-hidden></i>caddy</a>
